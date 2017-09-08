@@ -3,7 +3,6 @@
 from itertools import *
 
 def test_method(num, listA, listB):
-    print num
     new_list_a = list(permutations(listA, num))
     for e in new_list_a:
         if sum(e) in listB and set(listA) > set(e):
