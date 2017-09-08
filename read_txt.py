@@ -3,6 +3,7 @@
 def read_txt(path):
     with open(path, 'r') as f1:
         l1 = f1.read().replace('\n', ' ')
+        l1 = l1.replace(',', '')
     l2 = l1.split()
     return l2
 
